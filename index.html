@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, Aliya Alby! 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <div class="heart-bg" id="hearts-container"></div>
+        <canvas id="confetti-canvas"></canvas>
+
+        <div class="card">
+            <h1>Aliya Alby 💖</h1>
+            <p id="question">Hey beautiful... Can I ask you something special? 😊</p>
+            
+            <div class="romantic-text" id="romanticText">
+                Every moment with you feels like a beautiful dream... ❤️
+            </div>
+
+            <div class="buttons" id="buttons">
+                <button class="yes" id="yesBtn">Yes! 💕</button>
+                <button class="no" id="noBtn">Maybe... 😏</button>
+            </div>
+
+            <div class="gallery" id="gallery">
+                <img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Romantic hearts">
+                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Valentine's flowers">
+                <img src="https://images.unsplash.com/photo-1529255484355-cb73c33c04bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Love letter">
+            </div>
+
+            <div class="footer">
+                Made with ❤️ for the most amazing person
+            </div>
+        </div>
+
+        <div class="big-heart" id="bigHeart"></div>
+        
+        <!-- Audio Elements -->
+        <audio id="heartbeatSound" preload="auto">
+            <source src="https://assets.mixkit.co/sfx/preview/mixkit-heartbeat-fast-490.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="celebrationSound" preload="auto">
+            <source src="https://assets.mixkit.co/sfx/preview/mixkit-romantic-heartbeat-1156.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="clickSound" preload="auto">
+            <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
