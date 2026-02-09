@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valentine's Love Journey 💕</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="proposal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="floating-hearts" id="hearts"></div>
+<div class="animated-bg-overlay" id="animatedBg"></div>
+
+<!-- Section 1: Quiz Section -->
+<div class="section active" id="quizSection">
+  <div class="container">
+    <div class="quiz-content">
+      <div class="heart-logo">💕</div>
+      <h1>Let's play a little love game ❤️</h1>
+      <p>Answer these questions to continue your journey...</p>
+      
+      <div class="name-input-section" id="nameInputSection">
+        <input type="text" id="personName" placeholder="What's your sweet name?" autocomplete="off"/>
+        <button class="primary-btn" onclick="startQuiz()">Start Quiz 💕</button>
+      </div>
+      
+      <div class="quiz-questions" id="quizQuestions" style="display: none;">
+        <div class="quiz-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span id="questionNumber">Question 1/20</span>
+        </div>
+        <div class="quiz-card">
+          <p id="question"></p>
+          <div class="quiz-buttons">
+            <button id="btn1" class="quiz-btn" onclick="nextQuestion()"></button>
+            <button id="btn2" class="quiz-btn" onclick="nextQuestion()"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section 2: Love Calculator Section -->
+<div class="section" id="calculatorSection">
+  <div class="container">
+    <div class="calculator-content">
+      <h2>💝 Love Calculator</h2>
+      <p>Calculate your love compatibility</p>
+      <div class="calculator-form">
+        <input type="text" id="yourNameCalc" placeholder="Your name"/>
+        <input type="text" id="partnerNameCalc" placeholder="Partner's name"/>
+        <button class="calculate-btn" onclick="calculateLove()">Calculate Love 💕</button>
+      </div>
+      <div class="result-container" id="loveResult" style="display: none;">
+        <div class="love-percentage" id="lovePercentage">0%</div>
+        <div class="love-message" id="loveMessage">Loading...</div>
+        <div class="love-meter">
+          <div class="meter-fill" id="meterFill"></div>
+        </div>
+        <button class="continue-btn" onclick="goToProposal()">Continue to Proposal 💘</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section 3: Proposal Section -->
+<div class="section" id="proposalSection">
+  <div class="container">
+    <!-- Flying Heart with Envelope -->
+    <div class="heart-container">
+      <div class="wing right"></div>
+      <div class="wing left"></div>
+      <div class="heart"></div>
+      <div id="envelope">
+        <div class="top"></div>
+        <div class="sides"></div>
+      </div>
+    </div>
+    
+    <!-- Proposal Question -->
+    <div id="wrapper">
+      <h2 id="question">💘 <span id="displayName">yourname</span>, will you be my Valentine? 💘</h2>
+      <img id="gif" alt="gif" src="https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif"/>
+      <div id="btn-group">
+        <button id="yes-btn" class="proposal-btn">Yes ❤️</button>
+        <button id="no-btn" class="proposal-btn">No 😢</button>
+      </div>
+    </div>
+    
+    <!-- Love Letter Option -->
+    <div style="margin-top: 30px; text-align: center;">
+      <a href="love-letter.html" class="love-letter-btn">Open My Flying Love Letter 💌</a>
+    </div>
+  </div>
+</div>
+
+<!-- Final Celebration Screen -->
+<div class="celebration-screen" id="celebrationScreen" style="display: none;">
+  <div class="hearts" id="celebrationHearts"></div>
+  
+  <h1>💖 Yayyy <span id="finalName">[yourname]</span>! I knew you'd say yes 😍💖</h1>
+  <p>You're officially my Valentine now — best decision ever! 🥰</p>
+  <p>Happy Valentine's Day my love! May our days be filled with endless joy, sweet moments, and countless memories together. 💕</p>
+  <p>You make every day feel like Valentine's Day, and I'm so grateful to have you in my life! 🌹</p>
+  
+  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="happy cute dance">
+  
+  <button class="restart-btn" onclick="restartJourney()">Start New Journey 💕</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
