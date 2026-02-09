@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "valentainsday/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/valentainsday/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/valentainsday/$1"
+    }
+  ]
+}

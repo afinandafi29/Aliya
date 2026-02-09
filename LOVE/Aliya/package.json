@@ -1,0 +1,41 @@
+{
+  "name": "valentines-love-journey",
+  "version": "2.0.0",
+  "description": "A romantic, interactive Valentine's Day experience with quiz, love calculator, and proposal features",
+  "main": "valentainsday/index.html",
+  "scripts": {
+    "start": "npx serve valentainsday -l 8000",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod",
+    "preview": "vercel",
+    "lint": "echo 'No linting configured'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "valentine",
+    "love",
+    "romantic",
+    "interactive",
+    "quiz",
+    "proposal",
+    "valentines-day"
+  ],
+  "author": "Valentine Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/valentines-love-journey"
+  },
+  "homepage": "https://valentines-love-journey.vercel.app",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
